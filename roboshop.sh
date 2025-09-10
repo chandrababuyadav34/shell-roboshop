@@ -3,7 +3,7 @@
 
 AMI_ID="ami-09c813fb71547fc4f"
 SG_ID="sg-0fd59b8e9516cdcfd" # replace with your SG ID
-INSTANCES=("mongodb" "redis" "catalogue" "frontend" "cart")
+INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "frontend")
 ZONE_ID="Z01733572HPL17T8X7GR9" # replace with your ZONE ID
 DOMAIN_NAME="chandu.fun" # replace with your domain
 
