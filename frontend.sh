@@ -63,5 +63,7 @@ VALIDATE $? "Remove default nginx conf"
 cp $SCRIPT_DIR/nginx.conf /etc/nginx/nginx.conf
 VALIDATE $? "Copying nginx.conf"
 
+systemctl daemon-reload &>>$LOG_FILE
+
 systemctl restart nginx 
 VALIDATE $? "Restarting nginx"
